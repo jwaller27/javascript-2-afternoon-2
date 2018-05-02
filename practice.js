@@ -115,7 +115,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
 
+  var newArray=[];
+  var evensArray=numbersArray.filter(function(val,i,arr){
+      return arr[i]%2==0;
+  })
+  var oddsArray=numbersArray.filter(function(val,i,arr){
+      return arr[i]%2!=0;
+  })
+
+  newArray[0]=evensArray, newArray[1]=oddsArray;
+  return newArray;
+}
 
 
 ////////// PROBLEM 7 //////////
