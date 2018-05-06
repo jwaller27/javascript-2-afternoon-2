@@ -90,16 +90,25 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+// function evenFinder(nums){
+//   var newArray=[];
+//   for(var i=0;i<nums.length;i++){
+//       if (nums[i]%2==0){
+//           newArray.push(nums[i]);
+//       }
+//   }
+//   return newArray;
+// }
+
 function evenFinder(nums){
-  var newArray=[];
-  for(var i=0;i<nums.length;i++){
-      if (nums[i]%2==0){
-          newArray.push(nums[i]);
-      }
+  newArray=[];
+  for(let i=0;i<nums.length;i++){
+    if (nums[i]%2===0){
+      newArray.push(nums[i]);
+    }
   }
   return newArray;
 }
-
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
 
@@ -148,7 +157,17 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder(array){
+  let please = getRandomArbitrary();
+  please;
+  for(i=0;i<array.length;i++){
+    if (array.indexOf(please)!==-1){
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
 
 
 ////////// PROBLEM 8 //////////
@@ -187,7 +206,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker (){
+  var newArray=[];
+  for(let i=1;i<=215;i++){
+    newArray.push(i);
+  }
+  return newArray;
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -228,7 +253,13 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1,arr2){
+  if(arr1.length>arr2.length){
+    return arr1;
+  } else {
+    return arr2;
+  }
+}
 
 
 /*
@@ -280,7 +311,10 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(tyler,cahlan,ryan,colt);
+devMountainEmployees.reduce((accum,val)=> {
+  return acc.concat(val);
+});
 
 
 /*
